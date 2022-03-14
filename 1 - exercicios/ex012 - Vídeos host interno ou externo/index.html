@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+    <link rel="shortcut icon" href="../ex004 - Ícone/atom-icon.png" type="image/x-icon">
+    <style>
+        body {background-color: azure;}
+    </style>
+</head>
+<body>
+
+<!-- Formatos de video são MP4, M4V, WEBM e OGV. Não passe de 1080p em hospedagens internas. -->
+
+    <h1>
+        Vídeos em hospedagem interna (simples)
+    </h1>
+        <p>
+            Este vídeo está hospedado no meu próprio servidor em um método simples (somente um formato).
+        </p>
+    <video src="videos/snow.mp4" poster="thumb/limoes-capa.png" width="480" height="270" controls preload="metadata"></video>
+                                                                                    
+                                            <!-- poster = thumbnail -->
+    
+    <h1>
+        Vídeos em hospedagem interna (completo)
+    </h1>
+        <p>
+            Este vídeo está hospedado no meu próprio servidor em um método completo (vários formatos).
+        </p>
+    <video width="480" height="270" poster="thumb/limoes-capa.png" controls preload="metadata">
+        <source src="videos/snow.mp4" type="video/mp4">
+        <source src="videos/snow.m4v" type="video/mp4">
+        <source src="videos/snow.webm" type="video/webm">
+        <source src="videos/snow.ogv" type="video/ogg">
+        <p>
+            Seu navegador não tem compatibilidade com reprodução de vídeos. <a href="videos/snow.mp4" target="_self" download="snow.mp4">Clique aqui para baixar o aquivo mp4.</a>
+        </p>
+    </video>
+
+    <h1>
+        Vídeos em hospedagem externa
+    </h1>
+        <p>
+            Vá ao ao vídeo desejado no youtube e clique em <q>Incorporar</q>. 
+        </p>
+        <iframe width="480" height="270" src="https://www.youtube.com/embed/C6AOxCYfUPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

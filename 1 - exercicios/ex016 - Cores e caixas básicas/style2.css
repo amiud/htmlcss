@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+*
+    { /* Configurações globais da CSS */
+        height: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+h1
+    {
+        text-align: center;
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }
+body
+    {
+        background-image: linear-gradient(to bottom, #00eeff, #ff0000, #00ff00);
+        background-attachment: fixed;
+    }

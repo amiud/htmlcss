@@ -1,0 +1,232 @@
+@charset "UTF-8";
+@font-face
+    {
+        font-family: 'idroid';
+        src: url('font/idroid.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal; 
+    }
+
+*
+    {
+        margin-block: 0;
+        margin-inline: 0;
+        margin: 0;
+    }
+body
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #141414;
+    }
+header
+    {
+        background-image: linear-gradient(to top, #346B2A, #77F760);
+        box-shadow: 0 3px 50px rgba(0, 0, 0, 0.5);
+    }
+header > h1
+    {
+        color: white;
+        text-align: center;
+        text-shadow: 0 0px 6px rgba(0, 0, 0, 1);
+        padding-top: 68px;
+    }
+header > p
+    {
+        color: rgb(208, 247, 204);
+        text-align: center;
+        text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+        padding: 30px 0;
+    }
+header > nav
+    {
+        text-align: left;
+        text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+        padding: 10px;
+    }
+header > nav > a
+    {
+        transition-duration: 1000ms;
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+header > nav > a:hover
+    {
+        background-color: #78AB6A;
+        color: #B0FA9B;
+        border-radius: 5px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+main
+    {
+        background-color: white;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+        max-width: 1280px;
+        min-width: 320px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        margin: auto;
+    }
+article > h1
+    {
+        color: #0a4704;
+        text-align: left;
+        font-family: idroid;
+        padding: 20px 40px;
+    }
+article > p
+    {
+        text-align: justify;
+        text-indent: 50px;
+        font-weight: 600;
+        padding: 0 40px;
+    }
+article > h2
+    {   
+        font-family: idroid;
+        text-align: left;
+        text-indent: 20px;
+        padding: 20px 40px;
+    }
+h2 > mark
+    {
+        display: block;
+        color: #0a4704;
+        background-color: rgba(255, 255, 255, 0);
+        background-image: linear-gradient(to right, #37ff003f, white);
+        border-radius: 10px;
+    }
+picture
+    {
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+    }
+div.video
+    {
+        text-align: center;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+        padding-bottom: 52%;
+        border: 50px solid #0a4704;
+        margin-top: 20px;
+        position: relative;
+    }
+div.video > iframe
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-top-width: 0px;
+        border-right-width: 0px;
+        border-bottom-width: 0px;
+        border-left-width: 0px;
+    }
+aside
+    {
+        background-color: #cdffbf;
+        border-radius: 20px;
+        margin: 30px;
+        text-align: justify;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+    }
+aside > h3
+    {
+        background-color: rgb(51, 151, 42);
+        color: white;
+        text-align: left;
+        text-indent: 20px;
+        text-shadow: 0 0 6px black;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+aside > p
+    {
+        text-align: justify;
+        font-weight: 600;
+        text-indent: 50px;
+        padding: 20px 40px;
+    }
+aside > div.list
+    {
+        text-align: center;
+        font-weight: 600;
+    }
+aside > div.list > ul#list1
+    {
+        display: inline-block;
+        text-align: justify;
+        padding-inline-start: 40px;
+    }
+aside > div.list > ul#list2
+    {
+        display: inline-block;
+        text-align: justify;
+        padding-inline-start: 40px;
+        padding-inline-end: 54px;
+    }
+aside > p#final
+    {
+        text-align: justify;
+        text-indent: 50px;
+        padding: 0 40px;
+        padding-bottom: 40px;
+    }
+p#finalarticle
+    {
+        text-align: justify;
+        text-indent: 50px;
+        font-weight: 600;
+        padding: 0 40px;
+        padding-bottom: 30px;
+    }
+strong
+    {
+        color: #149209;
+        font-weight: bold;
+        text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+    }
+strong > a
+    {
+        color: #149209;
+        font-weight: bold;
+        text-decoration: none;
+        text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+    }
+strong > a:hover
+    {
+        color: #1d6616;
+        font-weight: bold;
+        text-decoration: none;
+        text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+    }
+strong > a::after
+    {
+        content: '🔗';
+        text-shadow: 0;
+        font-weight: normal;
+        padding-left: 10px;
+    }
+footer
+    {
+        background-color: #072404;
+        box-shadow: 0px -3px 50px rgba(0, 0, 0, 0.5);
+        margin-top: 100px;
+    }
+footer > p 
+    {
+        color: #9bcc8f;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        padding: 10px;
+    }
+footer > p > mark
+    {
+        color: white;
+        background-color: #072404;
+        border-radius: 10px;
+    }

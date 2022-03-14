@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    <link rel="shortcut icon" href="icon/atom-icon.png" type="image/x-icon">
+    <style>
+        body {background-color: azure;}
+    </style>
+</head>
+<body>
+    <h1>
+        Imagens dinâmicas
+    </h1>
+        <p>
+            Tente abrir este site em vários dispositivos diferentes, ou simplesmente aumente e diminua o tamanho do seu navegador.
+        </p>
+
+    <!-- A ordem importa, com a tag min deve ser do maior pro menor. Já com a tag max deve ser do menor pro maior -->
+    <picture>                       
+        <source media="(min-width: 1000px)" srcset="imagens/g.png" type="image/png">
+        <source media="(min-width: 700px)" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/p.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>
+        Reproduzindo áudio 1.0
+    </h1>
+        <p>
+            Vamos aprender a reproduzir áudios em HTML5, método simples:
+        </p>
+    
+    <!-- MP3 WAV OGG (FOMARTOS DE ÁUDIO) -->
+    <audio src="audios/animemoan.mp3" preload="metadata" controls></audio>
+
+    <h1>
+        Reproduzindo áudio 2.0
+    </h1>
+        <p>
+            Áudios mais compatíveis com todos navegadores
+        </p>
+
+    <!-- Mais uma vez, a ordem importa, caso o áudio ainda não funcione, seu navegador não possui suporte para isso (tente avitar WAV) -->
+    <audio preload="metadata" controls>
+        <source src="audios/animemoan.mp3" type="audio/mpeg">
+        <source src="audios/animemoan.ogg" type="audio/ogg">
+        <source src="audios/animemoan.wav" type="audio/wav">
+        <p>
+            Infelizmente seu navegador não consegue reproduzir o áudio. <a href="audios/animemoan.mp3">Clique aqui para baixar o arquivo mp3</a>
+        </p>
+    </audio>
+        
+    <h1>
+        Tags
+    </h1>
+        <h2>
+            Tags das imagens
+        </h2>
+            <p>
+                Use a tag <strong>picture</strong> para as imagens dinâmicas. A tag <strong>media</strong> juntamente com <strong>min</strong> ou <strong>max</strong> para o tamanho, <strong>type</strong> para o tipo de mídia, e a tag <strong>srcset</strong> para setar (set) qual a imagem e onde ela fica (source).
+            </p>
+        <h2>
+            Tags do audio 
+        </h2>
+            <p>
+                Use a tag <strong>audio</strong> para áudios dinâmicos. A tag <strong>scr</strong> para dizer onde se localiza o áudio (source), e a tag <strong>type</strong> para o tipo de mídia.
+                <br>
+                Também dentro da chave <strong>audio</strong> tem a tag <strong>preload</strong> para dizer o quanto do arquivo será baixado em primeira mão, antes de ele ser tocado. A tag <strong>controls</strong> para adicionar um reprodutor, a tag <strong>loop</strong> para dar loop no áudio e a tag <strong>autoplay</strong> (não sei para que serve ainda).
+            </p>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        
+        body
+            {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: rgb(20, 20, 20);
+                color: rgb(0, 0, 0);
+                margin: 0;
+            }
+        main
+            {
+                background-image: linear-gradient(to right, gray 0.1%, lightgray 50%, gray 99.9%);
+                width: 80vw;
+                height: 53.7vw;
+                border: 2.660989888238425vw;
+                border-radius: 1.06439595529537vw;
+                margin: auto;
+            }
+        h1
+            {
+                margin-block-start: 0;
+                margin-block-end: 0;
+            }
+        span
+            {
+                display: inline-block;
+                font-size: 4vw;
+                background-color: #5B7347;
+                color: white;
+                text-shadow: 0.05321979776476849vw 0.05321979776476849vw 0.15965939329430548vw black;
+                text-align: center;
+
+                width: 20vw;
+                height: 20vw;
+
+                padding-top: 0.5vw;
+                padding-right: 1vw;
+                padding-bottom: 0.5vw;
+                padding-left: 1vw;
+                                                                                /* Essa deve ser a ordem seguida */
+                border-width: 2.5vw;
+                border-style: solid;
+                border-color: #90AB6A;
+
+                margin-top: 5vw;
+                margin-right: 10vw;
+                margin-bottom: 5vw;
+                margin-left: 25vw;
+
+                outline-width: 1vw;
+                outline-style: dashed;
+                outline-color: #AFCF95;
+
+                box-shadow: 2.5vw 2.55vw 10vw black;
+            }
+        h2
+            {
+                padding-top: 2.660989888238425vw;
+                text-align: justify;
+                margin-left: 1.06439595529537vw;
+                margin-right: 1.06439595529537vw;
+            }
+        p
+            {
+                text-shadow: 0.05321979776476849vw 0.05321979776476849vw 0.15965939329430548vw black;
+                text-indent: 5.32197977647685vw;
+                text-align: justify;
+                margin-left: 1.06439595529537vw;
+                margin-right: 1.06439595529537vw;
+            }
+        a
+            {
+                background-color: pink;
+                color: white;
+                text-shadow: 0.05321979776476849vw 0.05321979776476849vw 0.15965939329430548vw black;
+                text-decoration: none;
+                padding: 0.10643959552953698vw 0.21287919105907396vw;
+                border: 0.21287919105907396vw solid #E3C1C9;
+                margin: 0 0.21287919105907396vw;
+                outline: 0.21287919105907396vw solid #F1E7E1;
+            }
+        a:hover
+            {
+                color: darkorchid;
+                text-decoration: underline;
+            }
+    </style>
+</head>
+<body>
+        <main>
+            <h1>
+                <span>Exemplo de caixa box-level</span>
+            </h1>
+                <h2>
+                    Exemplo de inline-level:
+                </h2>
+                    <p>
+                        Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de inline-level</a>. Vamos ver como tudo isso funciona.
+                    </p>
+        </main>
+</body>
+</html>
