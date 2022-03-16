@@ -5,7 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Posição da imagem</title>
-    <link rel="stylesheet" href="style3.css">
+    <style>
+        *
+        {
+            margin: 0;
+            margin-inline: 0;
+            margin-block: 0;
+        }
+        div.block1
+        {
+            text-align: center;
+        }
+        div.block2
+        {
+            text-align: center;
+        }
+        h1.image
+        {
+            background-image: url(images/wallpaper002.jpg);
+            background-repeat: no-repeat;
+            width: 640px;
+            height: 426.5px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        h1#q1
+        {
+            display: inline-block;
+            background-position: left top;
+            margin: 5px 1px 1px 0;
+        }
+        h1#q2
+        {
+            display: inline-block;
+            background-position: right top;
+            margin: 5px 0 1px 0;
+        }
+        h1#q3
+        {
+            display: inline-block;
+            background-position: left bottom;
+            margin: 0 1px 1px 0;
+        }
+        h1#q4
+        {
+            display: inline-block;
+            background-position: right bottom;
+            margin: 0 0 1px 0;
+        }
+    </style>
 </head>
 <body>
     <div class="block1">
