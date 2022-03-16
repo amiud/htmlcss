@@ -1,0 +1,49 @@
+@charset "UTF-8";
+*
+    {
+        margin: 0;
+        margin-inline: 0;
+        margin-block: 0;
+    }
+div.block1
+    {
+        width: 1288px;
+        height: 426.5px;
+        margin: auto;
+    }
+div.block2
+    {
+        width: 1288px;
+        height: 426.5px;
+        margin: auto;
+    }
+h1.image
+    {
+        background-image: url(images/wallpaper003.jpg);
+        background-size: 200%;
+        background-repeat: no-repeat;
+        width: 640px;
+        height: 426.5px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+h1#q1
+    {
+        display: inline-block;
+        background-position: left top;
+    }
+h1#q2
+    {
+        display: inline-block;
+        background-position: right top;
+    }
+h1#q3
+    {
+        display: inline-block;
+        background-position: left bottom;
+    }
+h1#q4
+    {
+        display: inline-block;
+        background-position: right bottom;
+    }

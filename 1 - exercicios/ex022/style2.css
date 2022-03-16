@@ -1,0 +1,14 @@
+@charset "UTF-8";
+body
+    {
+        background-image: url('https://i.pinimg.com/736x/6f/1e/fb/6f1efb3e2f7ddb6f6b9a3dbefabe0c67.jpg');
+        background-size: 600px;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+h1
+    {
+        color: white;
+        text-shadow: 0 0 10px black;
+        text-align: center;
+    }
