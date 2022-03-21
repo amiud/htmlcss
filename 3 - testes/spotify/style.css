@@ -21,6 +21,7 @@ img.logo
 }
 nav
 {
+    position: relative;
     color: white;
     padding: 30px 0;
 }
@@ -32,15 +33,61 @@ nav a
     text-decoration: none;
     padding-right: 20px;
 }
-p.perfil
+div.perfil
 {
     display: inline;
     font-size: 15px;
     font-weight: bold;
 }
-p.perfil:hover
+div.perfil:hover
 {
     cursor: pointer;
+}
+p.hide
+{
+    display: none;
+    position: absolute;
+    top: 75px;
+    left: 170px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+input:checked + div.perfil p.hide
+{
+    display: block;
+}
+.triggerinput
+{
+    display: none;
+}
+span.acc
+{
+    display: block;
+    width: fit-content;
+    padding: 0;
+    margin: 15px 100px 10px 15px;
+    text-align: left;
+    font-weight: 700;
+}
+span.leave
+{
+    display: block;
+    width: fit-content;
+    padding: 0;
+    margin: 10px 118.86px 15px 15px;
+    text-align: left;
+    font-weight: 700;
+}
+span.acc:hover
+{
+    cursor: pointer;
+    color: rgb(31, 187, 31);
+}
+span.leave:hover
+{
+    cursor: pointer;
+    color: rgb(31, 187, 31);
 }
 nav span
 {
@@ -97,10 +144,8 @@ div.button button.start1
 }
 div.button button.start1:hover
 {
-    left: -1px;
-    top: -1px;
     background-color: black;
-    padding: 16px 32px;
+    transform: scale(1.05);
     border: 2px solid black;
 }
 div.button button.vp
@@ -119,9 +164,7 @@ div.button button.vp
 div.button button.vp:hover
 {
     background-color: #1D75DE;
-    padding: 16px 32px;
-    left: 149px;
-    top: -1px;
+    transform: scale(1.05);
 }
 div.aproveite aside
 {
@@ -304,9 +347,7 @@ button.start2:hover
 {
     background-color: black;
     border: 2px solid black;
-    width: 235px;
-    top: 586px;
-    left: 20px;
+    transform: scale(1.05);
     padding: 12px 32px;
 }
 footer
