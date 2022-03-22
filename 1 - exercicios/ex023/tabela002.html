@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas 2</title>
+    <style>
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table
+        {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td, th
+        {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        th
+        {
+            background-color: rgb(39, 39, 39);
+            color: white;
+            text-shadow: 0 0 2px black;
+        }
+        tbody > tr > td
+        {
+            text-indent: 10px;
+        }
+        tbody > tr:nth-child(odd)
+        {
+            background-color: rgba(0, 0, 0, 0.205);
+        }
+        tfoot td
+        {
+            background-color: rgb(39, 39, 39);
+            color: white;
+            text-shadow: 0 0 2px black;
+            text-align: center;
+        }
+        .num
+        {
+            text-align: right;
+        }
+        tfoot .num
+        {
+            color: rgb(255, 0, 0);
+        }
+        caption
+        {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: gold;
+            background-color: black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas grandes!!!</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>      <!-- scope=onde está os dados (coluna ou linha) -->
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.402</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.421.515</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.456.212</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">         
+                    Total de habitantes
+                </th>
+                <td class="num">
+                    <strong>79.214.565</strong>
+                </td>
+            </tr>
+        </tfoot>
+        <caption>População das Cidades Brasileiros</caption>
+    </table>
+</body>
+</html>
